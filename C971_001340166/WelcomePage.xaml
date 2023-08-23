@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="C971_001340166.WelcomePage">
+    <NavigationPage.TitleView>
+        <StackLayout>
+            <Label Text="" FontSize="Subtitle" HorizontalOptions="Center"/>
+        </StackLayout>
+    </NavigationPage.TitleView>
+
+    <StackLayout>
+
+        <Label Text="Term Planner" FontSize="Title" HorizontalOptions="Center" VerticalOptions="CenterAndExpand"/>
+        <Label Text="Welcome!" FontSize="Subtitle" HorizontalOptions="Center" VerticalOptions="CenterAndExpand"/>
+        <Button x:Name="btn_welcome_start" Text="Start" Clicked="btnFunc_welcome_start"/>
+        
+    </StackLayout>
+
+</ContentPage>

@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="C971_001340166.CourseModPage">
+    <NavigationPage.TitleView>
+        <StackLayout Orientation="Horizontal">
+            <Label x:Name="lab_courseMod_title"  FontSize="Subtitle" HorizontalOptions="StartAndExpand"/>
+        </StackLayout>
+    </NavigationPage.TitleView>
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical">
+            <Entry x:Name="entry_courseMod_courseName" Placeholder="Course Name" HorizontalOptions="CenterAndExpand" Margin="0,30,0,10"/>
+            <StackLayout Orientation="Horizontal" Margin="15,0,0,0">
+                <Label Text="Notifications Enabled:" Margin="0,7,0,0"/>
+                <CheckBox x:Name="checkbox_courseMod_notifications"/>
+            </StackLayout>
+            <Picker x:Name="picker_courseMod_status" Title="Status" Margin="15, 0, 15, 0">
+                <Picker.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>Not Started</x:String>
+                        <x:String>In Progress</x:String>
+                        <x:String>Completed</x:String>
+                    </x:Array>
+                </Picker.ItemsSource>
+            </Picker>
+            <StackLayout Orientation="Vertical" Margin="15,15,15,0">
+                <Label Text="Instructor:"/>
+                <Entry x:Name="entry_courseMod_instructorName" Placeholder="Instructor Name"/>
+                <Entry x:Name="entry_courseMod_instructorPhone" Placeholder="Instructor Phone"/>
+                <Entry x:Name="entry_courseMod_instructorEmail" Placeholder="Instructor Email"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" Margin="70, 20, 70, 0">
+                <Label Text="Start Date" HorizontalOptions="Start"/>
+                <Label Text="End Date" HorizontalOptions="EndAndExpand"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" Margin="55, 0, 52, 0">
+                <DatePicker x:Name="datePicker_courseMod_start" HorizontalOptions="Start"/>
+                <DatePicker x:Name="datePicker_courseMod_end" HorizontalOptions="EndAndExpand"/>
+            </StackLayout>
+            <Entry x:Name="entry_courseMod_notes" Placeholder="Notes" Margin="15,15,15,0"/>
+            <Button x:Name="btn_courseMod_save" Text="Save" VerticalOptions="EndAndExpand" Clicked="btnFunc_courseMod_save"/>
+            <Button x:Name="btn_courseMod_delete" Text="Delete" VerticalOptions="End" Clicked="btnFunc_courseMod_delete" IsVisible="false"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

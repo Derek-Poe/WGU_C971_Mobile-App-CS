@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="C971_001340166.TermPage">
+    <NavigationPage.TitleView>
+        <StackLayout>
+            <Label Text="Terms" FontSize="Subtitle" HorizontalOptions="Center"/>
+        </StackLayout>
+    </NavigationPage.TitleView>
+    <ContentPage.Content>
+        <StackLayout>
+            <ListView x:Name="listView_terms_terms" ItemSelected="listViewFunc_term_termSelected"/>
+            <Button Text="New Term" Clicked="btnFunc_term_newTerm" VerticalOptions="End"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

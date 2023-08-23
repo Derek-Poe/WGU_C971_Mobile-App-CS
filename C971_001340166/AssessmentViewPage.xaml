@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="C971_001340166.AssessmentViewPage">
+    <NavigationPage.TitleView>
+        <StackLayout Orientation="Horizontal">
+            <Label x:Name="lab_assessment_dates" Text="" FontSize="Subtitle" HorizontalOptions="StartAndExpand"/>
+            <Button x:Name="btn_assessment_editAssessment" Text="Edit" HorizontalOptions="End" Scale="0.75" Clicked="btnFunc_assessment_editAssessment"/>
+        </StackLayout>
+    </NavigationPage.TitleView>
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical">
+            <Label x:Name="lab_assessment_notifications" HorizontalOptions="Center" Margin="0,40,0,40" FontSize="19"/>
+            <Label x:Name="lab_assessment_type" HorizontalOptions="Center" FontSize="19"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

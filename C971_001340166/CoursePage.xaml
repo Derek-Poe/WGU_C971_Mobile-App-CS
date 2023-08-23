@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="C971_001340166.CoursePage">
+    <NavigationPage.TitleView>
+        <StackLayout Orientation="Horizontal">
+            <Label x:Name="lab_course_dates" Text="" FontSize="Subtitle" HorizontalOptions="StartAndExpand"/>
+            <Button x:Name="btn_course_editCourse" Text="Edit" HorizontalOptions="End" Scale="0.75" Clicked="btnFunc_course_editCourse"/>
+        </StackLayout>
+    </NavigationPage.TitleView>
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical">
+            <Label x:Name="lab_course_status" HorizontalOptions="Center" Margin="0,25,0,0" FontSize="25"/>
+            <Label x:Name="lab_course_notifications" HorizontalOptions="Center" Margin="0,0,0,40" FontSize="19"/>
+            <Label Text="Instructor:" Margin="15,0,0,0" FontSize="17"/>
+            <Label x:Name="lab_course_instructorName" HorizontalOptions="Center"/>
+            <Label x:Name="lab_course_instructorPhone" HorizontalOptions="Center"/>
+            <Label x:Name="lab_course_instructorEmail" HorizontalOptions="Center"/>
+            <StackLayout Orientation="Horizontal" Margin="15,60,0,0">
+                <Label Text="Notes" FontSize="17" Margin="0,12,0,0"/>
+                <Button x:Name="btn_course_shareNotes" Text="Share" Scale="0.7" Clicked="btnFunc_course_shareNotes"/>
+            </StackLayout>
+            <Label x:Name="lab_course_notes" Margin="15,0,0,0"/>
+            <Button x:Name="btn_course_assessments" Text="Assessments" VerticalOptions="EndAndExpand" Clicked="btnFunc_course_assessments"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

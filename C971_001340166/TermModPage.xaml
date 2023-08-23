@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="C971_001340166.TermModPage">
+    <NavigationPage.TitleView>
+        <StackLayout Orientation="Horizontal">
+            <Label x:Name="lab_termMod_title"  FontSize="Subtitle" HorizontalOptions="StartAndExpand"/>
+        </StackLayout>
+    </NavigationPage.TitleView>
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical">
+            <Entry x:Name="entry_termMod_termName" Placeholder="Term Name" HorizontalOptions="CenterAndExpand" Margin="0,50,0,0"/>
+            <StackLayout Orientation="Horizontal" Margin="70, 40, 70, 0">
+                <Label Text="Start Date" HorizontalOptions="Start"/>
+                <Label Text="End Date" HorizontalOptions="EndAndExpand"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" Margin="55, 0, 52, 0">
+                <DatePicker x:Name="datePicker_termMod_start" HorizontalOptions="Start"/>
+                <DatePicker x:Name="datePicker_termMod_end" HorizontalOptions="EndAndExpand"/>
+            </StackLayout>
+            <Button x:Name="btn_termMod_save" Text="Save" VerticalOptions="EndAndExpand" Clicked="btnFunc_termMod_save"/>
+            <Button x:Name="btn_termMod_delete" Text="Delete" VerticalOptions="End" Clicked="btnFunc_termMod_delete" IsVisible="false"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

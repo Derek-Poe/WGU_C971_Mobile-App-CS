@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="C971_001340166.AssessmentPage">
+    <NavigationPage.TitleView>
+        <StackLayout>
+            <Label x:Name="lab_assessment_title" Text="" FontSize="Subtitle" HorizontalOptions="StartAndExpand"/>
+        </StackLayout>
+    </NavigationPage.TitleView>
+    <ContentPage.Content>
+        <StackLayout>
+            <ListView x:Name="listView_assessment_assessments" ItemSelected="listViewFunc_assessment_assessmentSelected"/>
+            <Button Text="New Assessment" Clicked="btnFunc_assessment_newAssessment" VerticalOptions="End"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

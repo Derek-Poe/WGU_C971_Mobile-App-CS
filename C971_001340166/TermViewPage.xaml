@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="C971_001340166.TermViewPage">
+    <NavigationPage.TitleView>
+        <StackLayout Orientation="Horizontal">
+            <Label x:Name="lab_termView_dates" Text="" FontSize="Subtitle" HorizontalOptions="StartAndExpand"/>
+            <Button x:Name="btn_termView_editTerm" Text="Edit" HorizontalOptions="End" Scale="0.75" Clicked="btnFunc_term_editTerm"/>
+        </StackLayout>
+    </NavigationPage.TitleView>
+    <ContentPage.Content>
+        <StackLayout>
+            <ListView x:Name="listView_termView_courses" ItemSelected="listViewFunc_termView_courseSelected"/>
+            <Button Text="New Course" Clicked="btnFunc_termView_newCourse" VerticalOptions="End"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
